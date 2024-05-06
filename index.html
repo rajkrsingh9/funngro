@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>funngro</title>
 </head>
@@ -18,6 +19,25 @@
     <header>
         <div class="navbar">
             <img src="/funngro/src/asset 0.svg" alt="">
+            <div class="navoptions">
+                <ul>
+                    <li class="hideOnMobile"><a href="">Teen</a></li>
+                    <li class="hideOnMobile"><a href="">Parent</a></li>
+                    <li class="hideOnMobile"><a href="">Company</a></li>
+                    <i class="fa-brands fa-android fa-lg hideOnMobile" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-apple fa-lg hideOnMobile" style="color: #ffffff;"></i>
+                    <button class="hideOnMobile">Company Login </button>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="/funngro/src/asset 0.svg" alt="">
+                <a onclick=hideSidebar() href="index.html"><i class="fa-solid fa-xmark fa-lg"></i></a>
+            </div>
             <div class="navoptions">
                 <ul>
                     <li><a href="">Teen</a></li>
@@ -169,10 +189,10 @@
         <div class="company">
             <img src="/funngro/src/asset 19.png" alt="">
             <img src="/funngro/src/asset 20.png" alt="">
-            <img src="/funngro/src/asset 21.png" alt="">
+            <img  class="hide"  src="/funngro/src/asset 21.png" alt="">
             <img src="/funngro/src/asset 22.png" alt="">
-            <img src="/funngro/src/asset 23.png" alt="">
-            <img src="/funngro/src/asset 24.png" alt="">
+            <img class="hide" src="/funngro/src/asset 23.png" alt="">
+            <img class="hide" src="/funngro/src/asset 24.png" alt="">
             <img src="/funngro/src/asset 25.png" alt="">
         </div>
         <div class="icon">
@@ -215,6 +235,11 @@
         </div>
         <p>©All Copyrights reserved 2023 By &nbsp; <a href="">FUNNGRO</a></p>
     </div>
+
+
+
+    <script src="script.js"></script>
 </body>
+
 
 </html>
